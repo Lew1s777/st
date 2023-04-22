@@ -6,8 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 //static char *font = "JetBrainsMono Nerd Font Mono:pixelsize=26:antialias=true:autohint=true";
-//static char *font = "SauceCodePro Nerd Font Mono:pixelsize=26:antialias=true:autohint=true";
-static char *font = "Source Code Pro:pixelsize=26:antialias=true:autohint=true";
+static char *font = "SauceCodePro Nerd Font Mono:pixelsize=26:antialias=true:autohint=true";
+//static char *font = "Source Code Pro:pixelsize=26:antialias=true:autohint=true";
 static int borderpx = 1;
 
 /*
@@ -82,8 +82,9 @@ const int boxdraw_bold = 1;
 const int boxdraw_braille = 1;
 
 /* bg opacity */
-float alpha = 0.65;
-//float alpha = 0.5;                    //better visual if u r using a dark wallpaper
+//float alpha = 0.65;
+float alpha = 0.45;
+//float alpha = 0.0;
 
 /*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
@@ -136,6 +137,7 @@ static const char *colorname[] = {
   /* special colors */
 //[256] = "#222D31", /* background */
   [256] = "#282a36", /* background */
+//[256] = "#000000", /* background */
   [257] = "#B5B5B5", /* foreground */
 };
 

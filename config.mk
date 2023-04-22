@@ -24,9 +24,10 @@ LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft -lXrender\
 
 # flags
 #CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_C_SOURCE=200809L ${XINERAMAFLAGS}
-CPUFLAGS = -march=x86-64-v3
+#CPUFLAGS = -march=x86-64-v3
+CPUFLAGS = -march=native
 CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_C_SOURCE=200809L
-CFLAGS   = -std=c99 -pedantic -Wall -Wno-deprecated-declarations ${CPUFLAGS} -O3 ${INCS} ${CPPFLAGS}
+CFLAGS   = -std=c99 -pedantic -Wall -Wno-deprecated-declarations ${CPUFLAGS} -O3 --lto ${INCS} ${CPPFLAGS}
 STCPPFLAGS = -DVERSION=\"$(VERSION)\" -D_XOPEN_SOURCE=600
 STCFLAGS = $(INCS) $(STCPPFLAGS) $(CPPFLAGS) $(CFLAGS)
 STLDFLAGS = $(LIBS) $(LDFLAGS)
