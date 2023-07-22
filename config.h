@@ -82,8 +82,9 @@ const int boxdraw_bold = 1;
 const int boxdraw_braille = 1;
 
 /* bg opacity */
-//float alpha = 0.65;
-float alpha = 0.45;
+//float alpha = 0.60;
+float alpha = 0.55;
+//float alpha = 0.45;
 //float alpha = 0.0;
 
 /*
@@ -138,7 +139,8 @@ static const char *colorname[] = {
 //[256] = "#222D31", /* background */
   [256] = "#282a36", /* background */
 //[256] = "#000000", /* background */
-  [257] = "#B5B5B5", /* foreground */
+//  [257] = "#B5B5B5", /* foreground */
+  [257] = "#BD93F9", /* foreground */
 };
 
 /*
